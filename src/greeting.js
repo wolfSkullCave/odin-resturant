@@ -1,6 +1,4 @@
-const greeting = "hello, Odinite";
-
 const h1 = document.createElement("h1");
-h1.textContent = "Welcome to the Valhala!!";
+h1.textContent = "Welcome to the Halls of Valhala!!";
 
-export { greeting, h1 };
+export { h1 };

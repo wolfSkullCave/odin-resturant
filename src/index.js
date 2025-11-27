@@ -1,6 +1,5 @@
 import "./style.css";
-import { greeting, h1 } from "./greeting.js";
+import { h1 } from "./greeting.js";
+import { pageLoad } from "./page-load.js";
 
-console.log(greeting);
-
-document.body.appendChild(h1);
+pageLoad(h1);
