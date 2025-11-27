@@ -5,6 +5,7 @@ function buildLocationsPage() {
   h1.textContent = "Locations";
 
   pageLoad(h1);
+  // ToDo: Fill page with content.
 }
 
 export { buildLocationsPage };

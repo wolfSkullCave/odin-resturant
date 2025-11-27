@@ -6,6 +6,8 @@ function buildMenuPage() {
   h1.textContent = "Menu";
 
   pageLoad(h1);
+
+  // ToDo: Fill page with content.
 }
 
 export { buildMenuPage };

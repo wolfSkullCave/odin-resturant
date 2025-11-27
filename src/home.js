@@ -5,6 +5,8 @@ function buildHomePage() {
   h1.textContent = "Home";
 
   pageLoad(h1);
+
+  // ToDo: Fill page with content.
 }
 
 export { buildHomePage };

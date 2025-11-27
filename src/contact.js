@@ -5,6 +5,7 @@ function buildContactPage() {
   h1.textContent = "Contact Us";
 
   pageLoad(h1);
+  // ToDo: Fill page with content.
 }
 
 export { buildContactPage };
