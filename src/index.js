@@ -4,6 +4,7 @@ import { buildMenuPage } from "./menu.js";
 import { buildLocationsPage } from "./locations.js";
 import { buildContactPage } from "./contact.js";
 
+document.getElementById("btnLogo").addEventListener("click", buildHomePage);
 document.getElementById("btnHome").addEventListener("click", buildHomePage);
 document.getElementById("btnMenu").addEventListener("click", buildMenuPage);
 document

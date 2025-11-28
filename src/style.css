@@ -10,4 +10,39 @@ body {
   width: 80vw;
 }
 
-/* Todo: wipe file and do propper styling */
+/* Header styles */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Menu styles */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+nav ul li button:hover {
+  color: green;
+  background-color: white;
+}
+
+#btnLogo {
+  justify-self: flex-start;
+}
