@@ -1,13 +1,15 @@
 body {
-  background-color: darkred;
+  background-color: black;
   color: white;
 }
 
-.container {
+.content {
+  max-width: 70vw;
+  margin: 5vw auto;
   background-color: white;
   color: black;
-  display: flex;
-  width: 80vw;
+  padding: 2vw;
+  border-radius: 15px;
 }
 
 /* Header styles */

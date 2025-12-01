@@ -1,7 +1,11 @@
-function pageLoad(element) {
+function pageLoad() {
   const divContent = document.querySelector(".content");
-  divContent.innerHTML = "";
-  divContent.appendChild(element);
+
+  const clear = () => (divContent.innerHTML = "");
+  const add = (element) => divContent.appendChild(element);
+  const addClass = (className) => divContent.classList.add(className);
+
+  return { clear, add, addClass };
 }
 
 export { pageLoad };
