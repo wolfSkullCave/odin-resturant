@@ -17,6 +17,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  align-items: center;
 }
 
 /* Menu styles */
@@ -47,4 +48,10 @@ nav ul li button:hover {
 
 #btnLogo {
   justify-self: flex-start;
+  width: 80px;
+  height: 80px;
+  background-image: url("logo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
 }
