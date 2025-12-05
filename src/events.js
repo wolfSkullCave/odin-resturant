@@ -1,3 +1,6 @@
+// events.js
+// Build the events page along with its contents.
+
 import { pageLoad } from "./page-load";
 
 function buildEventsPage() {

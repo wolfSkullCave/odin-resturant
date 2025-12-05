@@ -1,3 +1,6 @@
+// contact.js
+// Build the contact page along with its contents.
+
 import { pageLoad, clearContents } from "./page-load.js";
 
 function buildContactPage() {

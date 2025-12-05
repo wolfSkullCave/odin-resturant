@@ -1,3 +1,6 @@
+// locations.js
+// Build the locations page along with its contents.
+
 import { pageLoad, clearContents } from "./page-load.js";
 
 function buildLocationsPage() {

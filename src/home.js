@@ -1,10 +1,15 @@
+// home.js
+// This module is responsible for building the home page along with all of it's content.
+
 import { pageLoad } from "./page-load.js";
 
 function buildHomePage() {
+  // Prep the content div
   const homePage = pageLoad();
   homePage.clear();
   homePage.addClass("homePage");
 
+  // Create elements
   const h1 = document.createElement("h1");
   h1.textContent = "Welcome to The Halls of Valhalla";
 
@@ -27,6 +32,7 @@ function buildHomePage() {
   <p>To celebrate the spirit of Norse mythology through food that nourishes the body and soul. Each dish is crafted with fresh ingredients, bringing traditional recipes to modern dining.</p>
 `;
 
+  // Add elements to DOM
   homePage.add(h1);
   homePage.add(text);
   homePage.add(aboutSection);

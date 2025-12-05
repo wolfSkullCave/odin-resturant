@@ -1,14 +1,17 @@
+// menu.js
+// Build the menu page along with its contents.
+
 import { pageLoad } from "./page-load.js";
 
 function buildMenuPage() {
+  // Prepping the content div
   const menuPage = pageLoad();
   menuPage.clear();
 
+  // Creating elememts
   const h1 = document.createElement("h1");
   h1.textContent = "Menu";
 
-  menuPage.add(h1);
-  // ToDo: Fill page with content.
   const content = document.createElement("div");
   content.innerHTML = `
   <h3>Starters</h3>
@@ -33,6 +36,7 @@ Nordic Sodas: Refreshing sodas inspired by ancient recipes, made with natural in
    </ul>
 `;
 
+  menuPage.add(h1);
   menuPage.add(content);
 }
 
