@@ -7,8 +7,10 @@ function pageLoad() {
 
   const clear = () => (divContent.innerHTML = ""); // clears the content div
   const add = (element) => divContent.appendChild(element); // adds an element to the DOM
-  const addClass = (className) => divContent.classList.add(className); // adds an extra class to the content div
-
+  const addClass = (className) => {
+    divContent.className = "content";
+    divContent.classList.add(className);
+  };
   return { clear, add, addClass };
 }
 

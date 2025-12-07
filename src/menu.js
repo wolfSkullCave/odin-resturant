@@ -7,37 +7,143 @@ function buildMenuPage() {
   // Prepping the content div
   const menuPage = pageLoad();
   menuPage.clear();
+  menuPage.addClass("menuPage");
 
   // Creating elememts
-  const h1 = document.createElement("h1");
-  h1.textContent = "Menu";
+  function h1(text) {
+    const h1 = document.createElement("h1");
+    h1.textContent = text;
+    return h1;
+  }
 
-  const content = document.createElement("div");
-  content.innerHTML = `
-  <h3>Starters</h3>
-  <ul>
-    <li> <strong>Odin's Feast Platter:</strong> A selection of smoked meats, cheeses, and pickled vegetables, perfect for sharing.</li>
-    <li><strong>Valkyrie’s Bounty Salad:</strong> A refreshing mix of seasonal greens, nuts, and berries, drizzled with honey-mustard dressing.</li>
-  </ul>
-  <h3>Main Courses</h3>
-  <ul>
-    <li> <strong>Thor’s Hammer steak:</strong> Juicy grilled ribeye served with roasted garlic and seasonal vegetables.</li>
-    <li><strong>Frey’s Fish:</strong> Herb-crusted salmon with a side of barley risotto and asparagus.</li>
-   </ul>
-  <h3>Desserts</h3>
-  <ul>
-    <li><strong>Heavenly Nectar Cake: </strong>A rich honey cake topped with whipped cream and berries.</li>
-    <li><strong>Valhalla Chocolate Mousse:</strong> Decadent dark chocolate mousse served with a dusting of cocoa.</li>
-   </ul>
-  <h3>Drinks</h3>
-  <ul>
-Mjölnir Wine: A selection of wines from the finest vineyards of Midgard.
-Nordic Sodas: Refreshing sodas inspired by ancient recipes, made with natural ingredients.
-   </ul>
-`;
+  function h2(text) {
+    const h2 = document.createElement("h2");
+    h2.textContent = text;
+    return h2;
+  }
 
-  menuPage.add(h1);
-  menuPage.add(content);
+  function h3(text) {
+    const h3 = document.createElement("h3");
+    h3.textContent = text;
+    return h3;
+  }
+
+  function div() {
+    const div = document.createElement("div");
+    return div;
+  }
+
+  function card(img, title, text) {
+    const divCard = document.createElement("div");
+    divCard.classList.add("card");
+
+    const divImg = document.createElement("div");
+    divImg.classList.add("cardImg");
+
+    const divTxt = document.createElement("div");
+    divTxt.classList.add("cardTxt");
+
+    divImg.appendChild(img);
+    divTxt.innerHTML = `<h3>${title}</h3> <p>${text}</p>`;
+
+    divCard.appendChild(divImg);
+    divCard.appendChild(divTxt);
+
+    return divCard;
+  }
+
+  function imgPlaceholder() {
+    const img = div();
+    img.innerHTML = "placeholder";
+    img.classList.add("imgPlaceholder");
+
+    return img;
+  }
+
+  const starter1 = card(
+    imgPlaceholder(),
+    "Oding's Feast Platter",
+    "A selection of smoked meats, cheeses, and pickled vegetables, perfect for sharing.",
+  );
+
+  const starter2 = card(
+    imgPlaceholder(),
+    "Nordic Soup",
+    "Rustic broth with root vegetables and herbs, served with warm bread.",
+  );
+
+  const main1 = card(
+    imgPlaceholder(),
+    "Odin’s Roast",
+    "Slow-roasted beef with juniper glaze, accompanied by roasted potatoes and seasonal greens.",
+  );
+
+  const main2 = card(
+    imgPlaceholder(),
+    "Freya’s Catch",
+    "Grilled salmon with dill butter, served with barley pilaf and lemon wedges.",
+  );
+
+  const main3 = card(
+    imgPlaceholder(),
+    "Veggie Hall",
+    "Charred root vegetables, wild mushrooms, and spiced lentils in a rich tomato base.",
+  );
+
+  const dessert1 = card(
+    imgPlaceholder(),
+    "Honey Mead Cake",
+    "Moist sponge infused with honey and mead, topped with cream.",
+  );
+
+  const dessert2 = card(
+    imgPlaceholder(),
+    "Rune Cookies",
+    "Shortbread biscuits stamped with ancient runes, served with hot chocolate.",
+  );
+
+  const drink1 = card(
+    imgPlaceholder(),
+    "Mead",
+    "Traditional honey wine, sweet and aromatic.",
+  );
+
+  const drink2 = card(
+    imgPlaceholder(),
+    "Herbal Tea",
+    "A calming blend of Nordic herbs and flowers.",
+  );
+
+  menuPage.add(h1("Menu"));
+
+  menuPage.add(h2("Starters"));
+  const divGrid = div();
+  divGrid.classList.add("menuGrid");
+  divGrid.appendChild(starter1);
+  divGrid.appendChild(starter2);
+  menuPage.add(divGrid);
+
+  menuPage.add(h2("Main Courses"));
+  const divMains = div();
+  divMains.classList.add("menuGrid");
+  divMains.appendChild(main1);
+  divMains.appendChild(main2);
+  divMains.appendChild(main3);
+  menuPage.add(divMains);
+
+  menuPage.add(h2("Desserts"));
+  const divDesserts = div();
+  divDesserts.classList.add("menuGrid");
+  divDesserts.appendChild(dessert1);
+  divDesserts.appendChild(dessert2);
+  menuPage.add(divDesserts);
+
+  menuPage.add(h2("Drinks"));
+  const divDrinks = div();
+  divDrinks.classList.add("menuGrid");
+  divDrinks.appendChild(drink1);
+  divDrinks.appendChild(drink2);
+  menuPage.add(divDrinks);
 }
 
 export { buildMenuPage };
