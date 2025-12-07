@@ -118,14 +118,14 @@ function buildMenuPage() {
 
   menuPage.add(h2("Starters"));
   const divGrid = div();
-  divGrid.classList.add("menuGrid");
+  divGrid.classList.add("menuFlex");
   divGrid.appendChild(starter1);
   divGrid.appendChild(starter2);
   menuPage.add(divGrid);
 
   menuPage.add(h2("Main Courses"));
   const divMains = div();
-  divMains.classList.add("menuGrid");
+  divMains.classList.add("menuFlex");
   divMains.appendChild(main1);
   divMains.appendChild(main2);
   divMains.appendChild(main3);
@@ -133,14 +133,14 @@ function buildMenuPage() {
 
   menuPage.add(h2("Desserts"));
   const divDesserts = div();
-  divDesserts.classList.add("menuGrid");
+  divDesserts.classList.add("menuFlex");
   divDesserts.appendChild(dessert1);
   divDesserts.appendChild(dessert2);
   menuPage.add(divDesserts);
 
   menuPage.add(h2("Drinks"));
   const divDrinks = div();
-  divDrinks.classList.add("menuGrid");
+  divDrinks.classList.add("menuFlex");
   divDrinks.appendChild(drink1);
   divDrinks.appendChild(drink2);
   menuPage.add(divDrinks);
