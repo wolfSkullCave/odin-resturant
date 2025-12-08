@@ -13,6 +13,8 @@ module.exports = {
   devServer: {
     watchFiles: ["./src/template.html"],
     hot: true,
+    open: true,
+    port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
