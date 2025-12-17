@@ -1,6 +1,6 @@
 # odin-resturant
 
-This project was created as part of **The Odin Project** curriculum (see here)[https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page]. It provides a chance to practice DOM manipulation by dynamically rendering a resturant home page. All of the content on the site is generated using javascript.
+This project was created as part of **The Odin Project** curriculum [see here](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page). It provides a chance to practice DOM manipulation by dynamically rendering a resturant home page. All of the content on the site is generated using javascript.
 
 ## Quick start
 
@@ -16,3 +16,5 @@ This project was created as part of **The Odin Project** curriculum (see here)[h
 
 - A simple javascript website where all the content is generated via DOM code.
 - Simple, readable structure- ease to tweak and extend.
+
+[View example](https://wolfskullcave.github.io/odin-resturant/)
